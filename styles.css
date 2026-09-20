@@ -1,0 +1,497 @@
+
+/* ==============================
+   GENERAL
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #fff5fa);
+    color: #4a3540;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+
+    padding: 20px 30px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, 0.15);
+
+    position: sticky;
+    top: 15px;
+    z-index: 10;
+}
+
+.logo {
+    color: #e75480;
+    font-size: 26px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ff69b4;
+}
+
+
+/* ==============================
+   HERO
+   ============================== */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 280px;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 8px solid white;
+
+    box-shadow:
+        0 15px 40px rgba(255, 105, 180, 0.35);
+
+    transition: 0.4s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.06) rotate(2deg);
+}
+
+.welcome {
+    color: #e75480;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 42px;
+    color: #d63384;
+    margin-bottom: 15px;
+}
+
+.hero-text p:not(.welcome) {
+    max-width: 650px;
+    margin: auto;
+
+    font-size: 18px;
+    color: #6b5260;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 13px 25px;
+
+    background: #e75480;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background: #ff69b4;
+    transform: translateY(-4px);
+}
+
+
+/* ==============================
+   SECTIONS
+   ============================== */
+
+.section {
+    background: white;
+
+    padding: 35px;
+
+    margin: 30px 0;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(255, 182, 193, 0.25);
+}
+
+.section h2 {
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+
+/* ==============================
+   SKILLS
+   ============================== */
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 15px;
+}
+
+.skill-card {
+    background: #ffe4ef;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.skill-card h3 {
+    color: #d63384;
+    margin-bottom: 8px;
+}
+
+.skill-card:hover {
+    background: #ff69b4;
+    color: white;
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 20px rgba(255, 105, 180, 0.25);
+}
+
+.skill-card:hover h3 {
+    color: white;
+}
+
+
+/* ==============================
+   PROJECTS
+   ============================== */
+
+.project {
+    background: #fff0f6;
+
+    padding: 20px;
+
+    margin: 15px 0;
+
+    border-radius: 15px;
+
+    border-left: 6px solid #ff69b4;
+
+    transition: 0.3s;
+}
+
+.project h3 {
+    color: #d63384;
+    margin-bottom: 5px;
+}
+
+.project:hover {
+    transform: translateX(10px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 105, 180, 0.15);
+}
+
+
+/* ==============================
+   INTERACTIVE SEARCH
+   ============================== */
+
+.interactive-section {
+    overflow: hidden;
+}
+
+.search-box {
+    display: flex;
+
+    gap: 12px;
+
+    margin: 25px 0;
+}
+
+#portfolio-search {
+    flex: 1;
+
+    padding: 15px 18px;
+
+    border: 2px solid #ffd1e2;
+
+    border-radius: 15px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    color: #4a3540;
+
+    transition: 0.3s;
+}
+
+#portfolio-search:focus {
+    border-color: #ff69b4;
+
+    box-shadow:
+        0 0 15px rgba(255, 105, 180, 0.2);
+}
+
+#search-button {
+    padding: 15px 25px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #e75480;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#search-button:hover {
+    background: #ff69b4;
+
+    transform: translateY(-3px);
+}
+
+#search-button:active {
+    transform: scale(0.95);
+}
+
+
+/* ==============================
+   JAVASCRIPT RESULTS
+   ============================== */
+
+.portfolio-card {
+    background: linear-gradient(
+        135deg,
+        #fff0f6,
+        #ffe4ef
+    );
+
+    padding: 22px;
+
+    margin: 15px 0;
+
+    border-radius: 18px;
+
+    border-left: 6px solid #ff69b4;
+
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    animation: appear 0.5s ease forwards;
+
+    transition: 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px) scale(1.01);
+
+    box-shadow:
+        0 10px 25px rgba(255, 105, 180, 0.2);
+}
+
+.portfolio-card h3 {
+    color: #d63384;
+
+    margin-bottom: 8px;
+
+    font-size: 22px;
+}
+
+.portfolio-card p {
+    margin: 5px 0;
+}
+
+
+/* ==============================
+   SEARCH MESSAGE
+   ============================== */
+
+.search-message {
+    background: #ffe4ef;
+
+    color: #d63384;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    animation: messageAppear 0.4s ease;
+}
+
+
+/* ==============================
+   ANIMATIONS
+   ============================== */
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes messageAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* ==============================
+   CONTACT
+   ============================== */
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+.footer {
+    text-align: center;
+
+    background: #e75480;
+
+    color: white;
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    margin-top: 40px;
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-list {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .hero-text h2 {
+        font-size: 32px;
+    }
+
+    .profile-pic {
+        width: 220px;
+        height: 220px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    #search-button {
+        width: 100%;
+    }
+
+}
+

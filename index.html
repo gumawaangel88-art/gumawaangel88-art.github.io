@@ -1,135 +1,298 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Kathrise Angel D. Gumawa | Portfolio</title>
 
     <link rel="stylesheet" href="styles.css">
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <header class="header">
+        <!-- HEADER -->
+        <header class="header">
 
-        <h1 class="logo">Kathrise Angel D. Gumawa</h1>
+            <h1 class="logo">
+                Kathrise Angel D. Gumawa
+            </h1>
 
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
 
-    </header>
+        </header>
 
-    <main>
 
-        <section class="hero">
+        <main>
 
-            <div class="hero-text">
+            <!-- HERO -->
+            <section class="hero">
 
-                <h2>Hello, I'm Kathrise Angel D. Gumawa</h2>
+                <div class="hero-image">
+
+                    <img
+                        src="c:\Users\theag\OneDrive\Pictures\Screenshots\Screenshot 2026-06-28 183833.png"
+                        alt="Kathrise Angel D. Gumawa"
+                        class="profile-pic"
+                    >
+
+                </div>
+
+                <div class="hero-text">
+
+                    <p class="welcome">
+                        WELCOME TO MY PORTFOLIO
+                    </p>
+
+                    <h2>
+                        Hello, I'm Kathrise Angel D. Gumawa
+                    </h2>
+
+                    <p>
+                        I am a 2nd Year BSIT Network Administration student
+                        who is passionate about learning programming,
+                        web development, and website design.
+                    </p>
+
+                    <a href="#about" class="hero-button">
+                        Learn More About Me
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- ABOUT -->
+            <section class="section" id="about">
+
+                <h2>About Me</h2>
 
                 <p>
-                    I am a 2nd Year BSIT Network Administration student who is
-                    passionate about learning programming and web development.
+                    I am a creative student who enjoys designing websites
+                    and learning new technologies. I am still a beginner
+                    in programming, but I continue practicing and improving
+                    my coding skills.
                 </p>
 
-            </div>
+                <p>
+                    I enjoy working on creative projects and learning
+                    through hands-on activities. My goal is to become more
+                    confident in programming and web development.
+                </p>
 
-            <div class="hero-image">
+            </section>
 
-               <img src="images/RECTIFY_IMG_20250413_105427 (2).jpg0"
-                   alt="Kathrise Angel D. Gumawa"
-                   class="profile-pic">
 
-            </div>
+            <!-- SKILLS -->
+            <section class="section" id="skills">
 
-        </section>
+                <h2>My Skills</h2>
 
-        <section class="section" id="about">
+                <div class="skills-grid">
 
-            <h2>About Me</h2>
+                    <div class="skill-card">
+                        <h3>HTML</h3>
+                        <p>Basic webpage structure and coding.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>CSS</h3>
+                        <p>Website styling, layouts, and design.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Python</h3>
+                        <p>Basic programming and simple programs.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Java</h3>
+                        <p>Basic programming exercises and concepts.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Web Design</h3>
+                        <p>Creating creative and organized websites.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Creativity</h3>
+                        <p>Enjoying design and creative problem solving.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROJECTS -->
+            <section class="section" id="projects">
+
+                <h2>My Projects</h2>
+
+                <p>
+                    Here are some of the activities and projects I have
+                    worked on while learning programming and web development.
+                </p>
+
+                <div class="project">
+
+                    <h3>Basic Python Programs</h3>
+
+                    <p>
+                        Simple Python programming activities and exercises.
+                    </p>
+
+                </div>
+
+                <div class="project">
+
+                    <h3>Basic HTML Coding Activities</h3>
+
+                    <p>
+                        HTML activities for practicing webpage structure.
+                    </p>
+
+                </div>
+
+                <div class="project">
+
+                    <h3>Java Programming Exercises</h3>
+
+                    <p>
+                        Java exercises for practicing programming concepts.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- INTERACTIVE PORTFOLIO -->
+            <section class="section interactive-section" id="interactive">
+
+                <h2>Explore My Portfolio</h2>
+
+                <p>
+                    Search for a skill, project, or area that I am learning.
+                </p>
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="portfolio-search"
+                        placeholder="Try Python, HTML, Java, CSS..."
+                        aria-label="Search my portfolio"
+                    >
+
+                    <button
+                        type="button"
+                        id="search-button"
+                    >
+                        Search
+                    </button>
+
+                </div>
+
+
+                <!-- EMPTY CONTAINER -->
+                <!-- JavaScript will put the results here. -->
+                <div id="portfolio-list"></div>
+
+            </section>
+
+
+            <!-- EXPERIENCE -->
+            <section class="section">
+
+                <h2>My Learning Journey</h2>
+
+                <p>
+                    I have recently started learning how to develop websites
+                    using HTML and CSS. I also practice programming through
+                    Java and Python activities.
+                </p>
+
+                <p>
+                    Sometimes coding can be challenging, but I continue
+                    practicing and learning from my mistakes. Every activity
+                    helps me become more comfortable with programming.
+                </p>
+
+            </section>
+
+
+            <!-- CONTACT -->
+            <section class="section" id="contact">
+
+                <h2>Contact Me</h2>
+
+                <div class="contact-info">
+
+                    <p>
+                        <strong>Personal Email:</strong>
+                        gumawaangel88@gmail.com
+                    </p>
+
+                    <p>
+                        <strong>School Email:</strong>
+                        kdgumawa1@student.hau.edu.ph
+                    </p>
+
+                    <p>
+                        <strong>Contact Number:</strong>
+                        0919 856 1438
+                    </p>
+
+                    <p>
+                        <strong>Course:</strong>
+                        BSIT - Network Administration
+                    </p>
+
+                    <p>
+                        <strong>Year Level:</strong>
+                        2nd Year
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
 
             <p>
-                I am a creative student who enjoys designing websites.
-                I am a beginner in programming and continue learning new
-                technologies to improve my coding skills every day.
+                &copy; 2026 Kathrise Angel D. Gumawa.
+                All Rights Reserved.
             </p>
 
-        </section>
+        </footer>
 
-        <section class="section">
-
-            <h2>Skills</h2>
-
-            <ul>
-                <li>Beginner Programmer</li>
-                <li>Basic HTML</li>
-                <li>Basic Python</li>
-                <li>Basic Java</li>
-                <li>Website Design</li>
-                <li>Creative Thinking</li>
-            </ul>
-
-        </section>
-
-        <section class="section" id="projects">
-
-            <h2>Projects</h2>
-
-            <div class="project">
-                Basic Python Programs
-            </div>
-
-            <div class="project">
-                Basic HTML Coding Activities
-            </div>
-
-            <div class="project">
-                Java Programming Exercises
-            </div>
-
-        </section>
-
-        <section class="section">
-
-            <h2>Experience</h2>
-
-            <p>
-                I have recently started learning how to develop websites
-                using HTML and CSS. I continue practicing programming
-                through Java and Python activities to improve my skills.
-            </p>
-
-        </section>
-
-        <section class="section" id="contact">
-
-            <h2>Contact Information</h2>
-
-            <p><strong>Personal Email:</strong> gumawaangel88@gmail.com</p>
-
-            <p><strong>School Email:</strong> kdgumawa1@student.hau.edu.ph</p>
-
-            <p><strong>Contact Number:</strong> 0919 856 1438</p>
-
-            <p><strong>Course:</strong> BSIT - Network Administration (2nd Year)</p>
-
-        </section>
-
-    </main>
-
-    <footer class="footer">
-
-        <p>&copy; 2026 Kathrise Angel D. Gumawa. All Rights Reserved.</p>
-
-    </footer>
-
-</div>
+    </div>
 
 </body>
+
 </html>
+
+
+
